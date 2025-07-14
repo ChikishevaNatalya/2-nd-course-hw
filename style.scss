@@ -1,0 +1,2174 @@
+  *{
+    margin:0;
+    padding:0;
+ }
+ html { 
+    max-width: 1440px;
+    overflow-x: hidden;
+ }
+  a {
+    text-decoration: none; 
+     color: rgb(32, 32, 39);
+}
+ body{
+    font-family: "Montserrat";
+     max-width: 1440px;
+     margin: 0 auto;
+}
+.center{
+        padding-left: max(calc(50% - 720px));
+        padding-right: max(calc(50% - 720px));
+        /* width: 100%; */
+        max-width: 1440px;
+        margin: 0 auto;
+}
+.top{
+    height: 710px;
+    background-color: rgb(225, 255, 143);
+   position: relative;}
+
+
+.header{
+   position: relative;
+   min-width: 1440px;
+   height: 710px;
+   z-index: 2;
+   overflow: hidden;
+
+    /* Звёзды */
+    &__decoration{
+    position: absolute;
+    width: 1074px;
+    height: 1130.46px;
+    left: 854px;
+    right: -488px;
+    top: -333.46px;
+    bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    }
+    &__vectors{
+    position: absolute;
+    width: 1074px;
+    height: 1130px;
+    top:-325px;
+    right: -488px;
+    }
+
+    &__vectors_star{
+    position: absolute;
+    width: 749.55px;
+    height: 791.06px;
+    left: 174px;
+    bottom: 299px;
+    transform: rotate(-2.45deg);
+    z-index: 4;
+    }
+    &__vector_line{
+    position: absolute;
+    width: 317px;
+    height: 163px;
+    top: 323px;
+    left: 0px;
+    transform: rotate(-5deg);
+
+    }
+    &__vector_dot{
+     position: absolute;
+  width: 749.55px;
+  height: 791.06px;
+  left: 0px;
+  top: 0px;
+    
+    }
+    &__vector_curve-1{
+    position: absolute;
+  width: 142px;
+  height: 179px;
+ left: 213px;
+ top: 550px;
+  transform: rotate(-1deg);
+    }
+    &__vector_curve-2{
+    .header__vector_curve-2{
+     position: absolute;
+     width: 219px;
+     height: 418px;
+     left: 371px;
+     bottom: 20px;
+     transform: rotate(-1deg);
+}
+    }
+    &__vector_curve-3{
+      position: absolute;
+      width: 80px;
+      height: 126px;
+      left: 393px;
+      top: 801px;
+    }
+    &__vector_curve-4{
+        position: absolute;
+        width: 47px;
+        height: 13px;
+        left: 491px;
+        bottom: 110px;
+        transform: rotate(55deg);
+        z-index: 3;
+    
+        
+    }
+    &__star_medium-1{
+         position: absolute;
+          width: 37px;
+          height: 37px;
+          left: 94px;
+          bottom: 222px;
+    }
+    &__star_medium-2{
+     position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 159px;
+    bottom: 149px;
+    }
+    &__star_large{
+    position: absolute;
+    width: 57px;
+    height: 57px; 
+    box-sizing: border-box;
+    top: 94px;
+    left: 365px;
+    transform: translateX(-305px);
+    z-index: 14;
+    }
+
+    &__star_small{
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      transform: translateX(-225px);
+      top: 69px;
+      left: 376px;
+    }
+    &__content{
+     width: 768px;
+   height: 358px;
+   padding-top: 196px;
+   padding-left: 120px;
+    }
+    &__title{
+        display: flex;
+        height: 156px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 24px;
+         z-index: 3;
+    }
+    &__text{
+        width: 720px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 48px;
+        z-index: 3;
+
+    }
+    &__btn{ 
+        width: 247px;
+        height: 66px;  
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        padding: 16px 28px 16px 28px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;   
+
+        &:hover{
+        background:  rgb(255, 255, 255);
+            color: rgb(32, 32, 39);   
+            box-sizing: border-box;      /* Включаем в размер внутренние отступы */
+            /* overflow: hidden;            Предотвращаем выход содержимого за пределы */
+            position: relative;          /* Позиционирование относительно самого себя */
+            z-index: 1;            
+
+        }
+    }
+    &__link{
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400; 
+    }
+}
+.menu{
+    width: 100%;
+    height: 90px;
+     background-color: rgb(188, 236, 48);
+     overflow: hidden;
+    
+    &__nav-box{
+    width: 100%;
+    overflow: hidden; /* Скрываем лишнее содержимое */
+    white-space: nowrap; /* Запрещаем перенос текста */
+        }
+    
+    &__nav{
+        display: inline-flex;
+        padding: 27px 49px;
+        gap: 51px;
+        box-sizing: border-box;
+        backdrop-filter: blur(50px); 
+        animation: scroll 70s linear infinite;
+        list-style-type: none;
+        }
+
+        @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }  
+    &__item{
+    display: inline-block;
+    vertical-align: middle;
+    } 
+
+    &__text{
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+    &__img{
+        margin: 0 5px;
+    }
+
+}
+.games{
+   background: rgb(32, 32, 39);
+  height: 100%;
+  position: relative;
+   
+
+&__container{
+  min-height: 1470px;
+}
+&__content{
+    padding-top: 94px;
+}
+&__text{
+    padding-top: 94px;
+    padding-left: 119px;
+    width: 788px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+     padding-top: 24px;
+     margin-bottom: 70px;
+}
+
+&__title{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 119px;
+}
+
+/* кард бокс */
+&-list{
+    padding-left: max(24px, calc(50% - 600px));
+    padding-right: max(24px, calc(50% - 600px));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 378px));
+    column-gap: 32px;
+    row-gap: 32px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+}
+
+/* 1 карточка */
+.games-card{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+
+
+&__container_1{
+  grid-column: span 4;
+  position: relative;
+  width: 378px;
+  height: 473px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  cursor: pointer; }
+
+  &__container_1:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }  
+&__info{
+  width:378px;
+  padding: 32px 32px 36px 32px;
+  box-sizing: border-box;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 26px;
+  box-sizing: border-box;
+
+}
+
+
+&__text{
+  width: 305px;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+&__title{
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+}
+
+.numbers-game_1{
+    position: absolute;
+    width: 378px;
+    height: 314px;
+    box-sizing: border-box;
+    overflow: hidden; 
+    background-color: #B557E5;
+    position: relative; 
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:0;
+
+
+&__field_1{
+  position: absolute; /* Абсолютное позиционирование для поворота */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+  display: grid;
+  grid-template-columns: repeat(5, 101px); /* Размер одной ячейки */
+  grid-template-rows: repeat(5, 101px); /* Четырёхрядная сетка */
+  border-radius: 30px;
+  gap: 7.61px; /* Без зазоров между ячейками */
+ z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+}
+
+&__tile-one{
+  width: 101px;
+  height: 101px;
+  background-color: rgb(217, 182, 255);
+  border: 0.5px solid rgb(39, 26, 88);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 40.59px;
+  font-weight: 800;
+  line-height: 110%;
+  text-align: center;
+  padding-top: 25%;
+  border-radius: 19px;
+  grid-gap: 20px;
+  box-sizing: border-box;
+  text-shadow:
+      1px 1px 0 rgba(0, 0, 0, 0.2),
+     -1px -1px 0 rgba(0, 0, 0, 0.2),
+      1px -1px 0 rgba(0, 0, 0, 0.2),
+     -1px 1px 0 rgba(0, 0, 0, 0.2),
+       0px 2px 0 rgba(0, 0, 0, 0.2),
+       2px 0px 0 rgba(0, 0, 0, 0.2),
+      -2px 0px 0 rgba(0, 0, 0, 0.2),
+       0px -2px 0 rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+&__tile--highlighted_1{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 19.02px;
+    box-shadow: 0px 18.92px 63.39px -11.35px rgba(0, 0, 0, 0.3);
+    background: rgb(233, 212, 255);
+    border: 0.5px solid rgba(39, 26, 88, 0.525);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 101px;
+    align-items: center;
+    gap: 9.461356163024902;
+    padding: 25.55px 27.44px 25.55px 27.44px;
+    width: 151px;
+    height: 151px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    z-index:3;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 81.17px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-shadow:
+      1px 1px 0 rgba(0, 0, 0, 0.2),
+     -1px -1px 0 rgba(0, 0, 0, 0.2),
+      1px -1px 0 rgba(0, 0, 0, 0.2),
+     -1px 1px 0 rgba(0, 0, 0, 0.2),
+       0px 2px 0 rgba(0, 0, 0, 0.2),
+       2px 0px 0 rgba(0, 0, 0, 0.2),
+      -2px 0px 0 rgba(0, 0, 0, 0.2),
+       0px -2px 0 rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+}
+
+
+/* 2 карточка */
+.game-card{
+    width: 378px;
+    height: 473px;
+
+
+&__container_2{
+  grid-column: span 4;
+  position: relative;
+  width: 378px;
+  height: 512px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+ user-select: none;
+}
+
+&__container_2:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }
+}
+
+.numbers-game_2{
+    position: relative;
+    width: 378px;
+    height: 314px;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: rgba(253, 173, 0, 1);
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 6px;
+
+
+&__field_2{
+  position: absolute; /* Абсолютное позиционирование для поворота */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Размер одной ячейки */
+  grid-template-rows: repeat(5, 1fr); /* Четырёхрядная сетка */
+  border-radius: 30px;
+   border: 0.5px solid rgba(0, 0, 0, 0.2),rgb(39, 26, 88);
+  gap: 7.61px; /* Без зазоров между ячейками */
+ z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+}
+
+&__tile-two {
+  background-color:rgb(255, 199, 0);
+  border: 0.5px solid rgba(32, 32, 39, 0.566);
+  color: white;
+  font-size: 40.59px;
+  text-align: center;
+  border-radius: 19px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-weight: 800;
+  line-height: 110%;
+  padding-top: 15px;
+   text-shadow:
+      1px 1px 0 rgba(0, 0, 0, 0.2),
+     -1px -1px 0 rgba(0, 0, 0, 0.2),
+      1px -1px 0 rgba(0, 0, 0, 0.2),
+     -1px 1px 0 rgba(0, 0, 0, 0.2),
+       0px 2px 0 rgba(0, 0, 0, 0.2),
+       2px 0px 0 rgba(0, 0, 0, 0.2),
+      -2px 0px 0 rgba(0, 0, 0, 0.2),
+       0px -2px 0 rgba(0, 0, 0, 0.2);
+ user-select: none;
+}
+&__tile-two:nth-child(1) {
+  width: 240px;
+ transform: translateX(10px);
+   
+}
+&__tile-two:nth-child(2) {
+  width: 219px;
+  transform: translateX(-15px);
+ }
+
+&__tile-two:nth-child(3) {
+  width: 267px;
+  transform: translateX(30px);
+  
+ 
+}
+&__tile-two:nth-child(4) {
+  width: 215px;
+  height: 80.51px;
+  background-color: rgb(255, 236, 143);
+  transform: translateX(30px);
+
+}
+
+&__tile-two:nth-child(5) {
+  width: 209px;
+  height: 80.51px;
+  background-color: rgb(255, 236, 143);
+  transform: translateX(15px);
+
+
+  }
+&__tile-two:nth-child(6) {
+  width: 215px;
+  height: 80.51px;
+  transform: translateX(-40px);
+}
+&__tile-two:nth-child(7) {
+  width: 244px;
+  height: 80.51px;
+ transform: translateX(30px);
+   transform: translateX(22px);
+}
+&__tile-two:nth-child(8) {
+  width: 219px;
+  height: 80.51px;
+  background-color: rgb(255, 236, 143);
+
+}
+
+&__tile-two:nth-child(9) {
+  width: 268px;
+  height: 80.51px;
+  background-color: rgb(255, 236, 143);
+  transform: translateX(30px);
+ 
+}
+&__tile-two:nth-child(10) {
+  width: 239px;
+  height: 80.51px;
+  background-color: rgb(255, 236, 143);
+transform: translateX(35px);
+}
+}
+
+
+/* Игра 3 */
+
+.games-card__container_3{
+  grid-column: span 4;
+  position: relative;
+  width: 378px;
+  height: 473px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 2; 
+  transition: transform 0.3s ease;
+  cursor: pointer;  
+
+
+&__container_3:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }
+}
+.numbers-game_3{
+    position: absolute;
+    width: 378px;
+    height: 314px;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: rgba(86, 94, 239, 1);
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:0;
+
+    &__field_3{
+    position: absolute; /* Абсолютное позиционирование для поворота */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /*Размер одной ячейки */
+    grid-template-rows: repeat(4, 1fr); /*Четырёхрядная сетка */
+    border-radius: 30px;
+    gap: 6px; /* Без зазоров между ячейками */
+    z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+    }
+    &__tile-three{
+    box-sizing: border-box;
+    border: 0.5px solid rgba(32, 32, 39, 0.685);
+    border-radius: 19.02px;
+    background: rgba(176, 174, 255, 1);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40.59px;
+    font-weight: 800;
+    line-height: 110%;
+    text-align: center;
+    padding-top: 15px;
+    text-shadow:
+        1px 1px 0 rgba(0, 0, 0, 0.2),
+        -1px -1px 0 rgba(0, 0, 0, 0.2),
+        1px -1px 0 rgba(0, 0, 0, 0.2),
+        -1px 1px 0 rgba(0, 0, 0, 0.2),
+        0px 2px 0 rgba(0, 0, 0, 0.2),
+        2px 0px 0 rgba(0, 0, 0, 0.2),
+        -2px 0px 0 rgba(0, 0, 0, 0.2),
+        0px -2px 0 rgba(0, 0, 0, 0.2);
+    padding: 15.22px 22.83px 20.29px 22.83px;
+    user-select: none;
+    }
+
+
+    &__tile-three:nth-child(1){
+    width: 134.66px;
+    height: 80.51px;
+    transform: translateX(80px);
+    }
+    &__tile-three:nth-child(2){
+    width: 191.66px;
+    height: 80.51px;
+    transform: translateX(75px);
+    }
+    &__tile-three:nth-child(3){
+    width: 191.66px;
+    height: 80.51px;
+    transform: translateX(-112px);
+    }
+    &__tile-three:nth-child(4){
+    width: 134.66px;
+    height: 80.51px;
+    transform: translateX(-120px);
+    }
+    &__tile-three:nth-child(5){
+    width: 124.66px;
+    height: 80.51px;
+    transform: translateX(85px);
+    }
+
+    &__tile-three:nth-child(6){
+    width: 247.66px;
+    height: 80.51px;
+    transform: translateX(75px);
+    }
+    &__tile-three:nth-child(7){
+    width: 134.66px;
+    height: 80.51px;
+    transform: translateX(-56px);
+    }
+    &__tile-three:nth-child(8){
+    width: 124.66px;
+    height: 80.51px;
+    transform: translateX(-110px);
+    
+    }
+    &__tile-three:nth-child(9){
+    width: 122.66px;
+    height: 80.51px;
+    transform: translateX(113px);
+    }
+    &__tile-three:nth-child(10){
+    width: 381.66px;
+    height: 80.51px;
+    transform: translateX(100px);
+    }
+
+    &__tile-three:nth-child(11){
+    width: 122.66px;
+    height: 80.51px;
+    transform: translateX(105px);
+    }
+
+    &__tile-three:nth-child(12){
+    width: 130.66px;
+    height: 80.51px;
+    transform: translateX(-96px);
+    }
+    &__tile-three:nth-child(13){
+    width: 130.66px;
+    height: 80.51px;
+    transform: translateX(165px);
+    }
+    &__tile-three:nth-child(14){
+    width: 213.66px;
+    height: 80.51px;
+    transform: translateX(162px);
+
+    }
+    &__tile-three:nth-child(15){
+    width: 130.66px;
+    height: 80.51px;
+    transform: translateX(-5px);
+    }
+}
+
+
+
+/* игра 4 */
+.games-card__container_4{
+  grid-column: span 4;
+  position: relative;
+  width: 100%;
+  max-width: 378;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  transform: translateY(-39px);
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+  margin: 0 auto;
+
+&__container_4:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }
+}
+.numbers-game_4{
+    position: absolute;
+    width: 378px;
+    height: 314px;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: #000000;
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:0;
+
+
+    &__field_4{
+    position: absolute; /* Абсолютное позиционирование для поворота */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+    display: grid;
+    grid-template-columns: repeat(5, 106.46px); /* Размер одной ячейки */
+    grid-template-rows: repeat(3, 141.95px); /* Четырёхрядная сетка */
+    border-radius: 30px;
+    gap: 7.61px; /* Без зазоров между ячейками */
+    z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+    }
+    &__tile-four{
+    width: 106.46px;
+    height: 141.95px;
+    background-color: var(--color); /* Различные цвета ячеек */
+    color: white;
+    font-family: Montserrat;
+    font-size: 60.88px;
+    font-weight: 800;
+    line-height: 110%;
+    text-shadow:
+        1px 1px 0 rgba(0, 0, 0, 0.2),
+        -1px -1px 0 rgba(0, 0, 0, 0.2),
+        1px -1px 0 rgba(0, 0, 0, 0.2),
+        -1px 1px 0 rgba(0, 0, 0, 0.2),
+        0px 2px 0 rgba(0, 0, 0, 0.2),
+        2px 0px 0 rgba(0, 0, 0, 0.2),
+        -2px 0px 0 rgba(0, 0, 0, 0.2),
+        0px -2px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 101px;
+    user-select: none;
+    border-radius: 19px;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    border-radius: 19.02px;
+    padding-top: 17px;
+    
+    }
+    &__tile--highlighted-4{
+    position: absolute;
+    width: 138.13px;
+    height: 184.18px;
+    background-color:rgb(255, 199, 0);
+    border: 0.5px solid rgba(39, 26, 88, 0.525);
+    border-radius: 19.02px;
+    box-shadow: 0px 15.27px 51.14px -9.16px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    z-index: 3;
+    }
+
+
+    &__tile-four:nth-child(1) { --color: rgb(86, 94, 239); }
+    &__tile-four:nth-child(2) { --color:rgb(0, 158, 228); }
+    &__tile-four:nth-child(3) { --color: rgb(173, 97, 255); }
+    &__tile-four:nth-child(4) { --color: rgb(242, 80, 80); }
+    &__tile-four:nth-child(5) { --color:rgb(0, 158, 228);}
+    &__tile-four:nth-child(6) { --color:rgb(31, 164, 108);}
+    &__tile-four:nth-child(7) { --color: rgb(242, 80, 80);}
+    &__tile-four:nth-child(8) { --color: rgb(255, 199, 0); }
+    &__tile-four:nth-child(9) { --color: rgb(153, 209, 0); }
+    &__tile-four:nth-child(10) { --color: rgb(255, 199, 0); }
+    &__tile-four:nth-child(11) { --color:rgb(0, 158, 228); }
+    &__tile-four:nth-child(12) { --color: rgb(153, 209, 0); }
+    &__tile-four:nth-child(13) { --color:  rgb(0, 158, 228);}
+    &__tile-four:nth-child(14) { --color: rgb(173, 97, 255);}
+    &__tile-four:nth-child(15) { --color: rgb(86, 94, 239); }
+
+}
+
+.game_num-four__img{
+position: absolute;
+width: 82px;
+height: 89px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(10deg);
+z-index: 10;
+
+
+}
+
+/* Игра 5 */
+
+.games-card__container_5{
+  grid-column: span 4;
+  position: relative;
+  width: 378px;
+  height: 512px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+
+&__container_5:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  }
+ } 
+.numbers-game_5{
+    position: absolute;
+    width: 378px;
+    height: 314px;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: rgba(153,209,0,1);
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:0;
+
+
+    &__field_5{
+    position: absolute; /* Абсолютное позиционирование для поворота */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+    display: grid;
+    grid-template-columns: repeat(5, 106.46px); /* Размер одной ячейки */
+    grid-template-rows: repeat(3, 141.95px); /* Четырёхрядная сетка */
+    border-radius: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2),rgb(39, 26, 88);
+    gap: 7.61px; /* Без зазоров между ячейками */
+    z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+    }
+
+    &__tile-five{
+    width: 106.46px;
+    height: 141.95px;
+    background-color: var(--color); /* Различные цвета ячеек */
+    border: 0.5px solid rgba(39, 26, 88, 0.466);
+    line-height: 101px;
+    border-radius: 19px;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    border-radius: 19.02px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 60.88px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-shadow:
+        1px 1px 0 rgba(0, 0, 0, 0.2),
+        -1px -1px 0 rgba(0, 0, 0, 0.2),
+        1px -1px 0 rgba(0, 0, 0, 0.2),
+        -1px 1px 0 rgba(0, 0, 0, 0.2),
+        0px 2px 0 rgba(0, 0, 0, 0.2),
+        2px 0px 0 rgba(0, 0, 0, 0.2),
+        -2px 0px 0 rgba(0, 0, 0, 0.2),
+        0px -2px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    user-select: none;
+    padding-top: 38px;
+
+
+
+    }
+    &__tile--highlighted-five{
+    position: absolute;
+    width: 138.13px;
+    height: 184.18px;
+    background-color: rgb(225, 255, 143);
+    border: 0.5px solid rgba(39, 26, 88, 0.525);
+    border-radius: 19.02px;
+    box-shadow: 0px 24.07px 80.64px -14.44px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 60.88px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-shadow:
+        1px 1px 0 rgba(0, 0, 0, 0.2),
+        -1px -1px 0 rgba(0, 0, 0, 0.2),
+        1px -1px 0 rgba(0, 0, 0, 0.2),
+        -1px 1px 0 rgba(0, 0, 0, 0.2),
+        0px 2px 0 rgba(0, 0, 0, 0.2),
+        2px 0px 0 rgba(0, 0, 0, 0.2),
+        -2px 0px 0 rgba(0, 0, 0, 0.2),
+        0px -2px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    user-select: none;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    z-index: 6;
+    padding-top: 55px;
+        box-sizing: border-box;
+    }
+
+
+    &__tile-five:nth-child(1) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(2) { --color:rgb(188, 236, 48); }
+    &__tile-five:nth-child(3) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(4) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(5) { --color:rgb(188, 236, 48);}
+    &__tile-five:nth-child(6) { --color:rgb(188, 236, 48);}
+    &__tile-five:nth-child(7) { --color: rgb(188, 236, 48);}
+    &__tile-five:nth-child(8) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(9) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(10) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(11) { --color:rgb(188, 236, 48); }
+    &__tile-five:nth-child(12) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(13) { --color:  rgb(188, 236, 48);}
+    &__tile-five:nth-child(14) { --color: rgb(188, 236, 48);}
+    &__tile-five:nth-child(15) { --color: rgb(188, 236, 48); }
+
+}
+.game_num-five__img{
+  width: 37px;
+  height: 67px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  z-index: 3;
+}
+
+/* Игра 6 */
+.games-card__container_6{
+ grid-column: span 4;
+  position: relative;
+  width: 378px;
+  height: 551px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1;
+  transform: translateY(-39px);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+    &__container_6:hover{
+        transform: translateY(-10px);
+        transform: scale(1.1);
+    }
+}
+
+.numbers-game_6{
+  width: 378px;
+  height: 314px;
+  overflow: hidden; /* Скрываем содержимое вне границ */
+  background-color: black;
+ position: absolute; /*Позиционирование абсолютного потомка  */
+  border-radius: 30px;
+  row-gap: 10px;
+  column-gap: 10px;
+
+
+    &__field_6{
+    position: absolute; /* Абсолютное позиционирование для поворота */
+    top: 50%;
+    left: 50%;
+    display: grid;
+    transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+    display: grid;
+    grid-template-columns: repeat(4, 101px); /* Размер одной ячейки */
+    grid-template-rows: repeat(4, 101px); /* Четырёхрядная сетка */
+    gap: 10px; /* Без зазоров между ячейками */
+    z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+    }
+
+    &__tile-six{
+    width: 101px;
+    height: 101px;
+    background-color: var(--color); /* Различные цвета ячеек */
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    line-height: 101px;
+    user-select: none;
+    border-radius: 19px;
+    grid-gap: 20px;
+
+    }
+
+    /* Уникальные цвета для ячеек */
+    &__tile-six:nth-child(1) { --color: rgb(217, 182, 255); }
+    &__tile-six:nth-child(2) { --color:rgb(31, 164, 108); }
+    &__tile-six:nth-child(3) { --color: rgb(86, 94, 239); }
+    &__tile-six:nth-child(4) { --color: rgb(0, 193, 255); }
+    &__tile-six:nth-child(5) { --color:rgb(242, 80, 80);}
+    &__tile-six:nth-child(6) { --color:rgb(255, 199, 0);}
+    &__tile-six:nth-child(7) { --color: rgb(153, 209, 0);}
+    &__tile-six:nth-child(8) { --color: rgb(173, 97, 255); }
+    &__tile-six:nth-child(9) { --color: rgb(86, 94, 239); }
+    &__tile-six:nth-child(10) { --color: rgb(0, 193, 255); }
+    &__tile-six:nth-child(11) { --color:rgb(255, 109, 0); }
+    &__tile-six:nth-child(12) { --color: rgb(31, 164, 108); }
+    &__tile-six:nth-child(13) { --color:  rgb(173, 97, 255);}
+    &__tile-six:nth-child(14) { --color: rgb(153, 209, 0);}
+    &__tile-six:nth-child(15) { --color: rgb(255, 199, 0); }
+    &__tile-six:nth-child(16) { --color: rgb(217, 182, 255);}
+}
+
+
+/* футер */
+.footer{
+  height: 150px;
+  background-color: rgb(189, 237, 53);
+  text-align: center;
+  padding: 61px;
+  box-sizing: border-box;
+ 
+    &__text{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    }
+}
+
+/* мини-игры */
+.mini_game-container{
+  min-height: 1200px;
+  padding-bottom: 144px;
+}
+.mini_game_desc{
+  padding-bottom: 72px;
+}
+.main__decoration{
+  position: absolute;
+}
+
+.mini_game__title{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    padding-left: 119px;
+    padding-top: 46px;
+    padding-bottom: 72px;
+}
+
+.minigames-list{
+    padding-left: max(calc(50% - 600px));
+    padding-right: max(calc(50% - 600px));
+    display: flex;
+    max-height: 3500px;
+  }
+
+/* 1 карточка */
+
+.minigames-card{
+  display: flex;
+    column-gap: 32px;
+    row-gap: 32px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+
+&__container_1{
+  grid-column: span 1;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  cursor: pointer; }
+
+  /* &__container_1:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);} */
+
+&__info{
+  width:600px;
+  height: 100%;
+  padding: 48px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+
+&__text{
+width: 440px;
+color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0px;
+text-align: left;
+padding-bottom: 12px;
+}
+&__title{
+  width: 75%;
+  color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 48px;
+font-weight: 700;
+line-height: 59px;
+letter-spacing: 0px;
+text-align: left;
+}
+}
+
+.minigames__btn{
+  width: 247px;
+height: 66px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+padding: 16px 28px 16px 28px;
+border-radius: 60px;
+background: rgb(32, 32, 39);
+color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 141.69%;
+text-align: center;
+    &:hover{
+    background:  rgb(255, 255, 255);
+        color: rgb(32, 32, 39);   
+        box-sizing: border-box;      /* Включаем в размер внутренние отступы */
+        position: relative;          /* Позиционирование относительно самого себя */
+        z-index: 1;  
+    } 
+ }   
+
+.numbers-minigame_1{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: #B557E5;
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 12px;
+    column-gap: 12px;
+    top:0;
+    left: 600px;
+
+
+&__field_1{
+  position: absolute; /* Абсолютное позиционирование для поворота */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+  display: grid;
+  grid-template-columns: repeat(5, 160px); /* Размер одной ячейки */
+  grid-template-rows: repeat(5, 160px); /* Четырёхрядная сетка */
+  border-radius: 30px;
+  gap: 12px; /* Без зазоров между ячейками */
+ z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+}
+
+&__tile-one{
+  width: 160px;
+  height: 160px;
+  background-color: rgb(217, 182, 255);
+  border: 0.5px solid rgb(39, 26, 88);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 25%;
+  border-radius: 30px;
+  grid-gap: 20px;
+  box-sizing: border-box;
+  border-radius: 19.02px;
+  text-shadow:
+      1px 1px 0 rgba(0, 0, 0, 0.2),
+    -1px -1px 0 rgba(0, 0, 0, 0.2),
+      1px -1px 0 rgba(0, 0, 0, 0.2),
+    -1px 1px 0 rgba(0, 0, 0, 0.2),
+      0px 2px 0 rgba(0, 0, 0, 0.2),
+      2px 0px 0 rgba(0, 0, 0, 0.2),
+      -2px 0px 0 rgba(0, 0, 0, 0.2),
+      0px -2px 0 rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+&__tile--highlighted_1{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 19.02px;
+    box-shadow: 0px 18.92px 63.39px -11.35px rgba(0, 0, 0, 0.3);
+    background: rgb(233, 212, 255);
+    border: 0.5px solid rgba(39, 26, 88, 0.525);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 101px;
+    align-items: center;
+    gap: 9.461356163024902;
+    padding: 25.55px 27.44px 25.55px 27.44px;
+    width: 239.31px;
+    height: 238.94px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    z-index:3;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-shadow:
+      1px 1px 0 rgba(0, 0, 0, 0.2),
+     -1px -1px 0 rgba(0, 0, 0, 0.2),
+      1px -1px 0 rgba(0, 0, 0, 0.2),
+     -1px 1px 0 rgba(0, 0, 0, 0.2),
+       0px 2px 0 rgba(0, 0, 0, 0.2),
+       2px 0px 0 rgba(0, 0, 0, 0.2),
+      -2px 0px 0 rgba(0, 0, 0, 0.2),
+       0px -2px 0 rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+}
+
+}
+
+/* 2 карточка */
+.minigame-card{
+    width: 378px;
+    height: 473px;
+    padding-bottom: 32px;
+
+
+&__container_2{
+  grid-column: span 1;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+ user-select: none;
+}
+
+/* &__container_2:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  } */
+
+  &__info-tw0{
+  width:600px;
+  height: 100%;
+  padding: 48px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  left: 600px;
+}
+}
+.numbers-minigame_2{
+    position: relative;
+    width: 600px;
+    height: 100%;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: rgba(253, 173, 0, 1);
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 6px;
+
+
+    &__field_2{
+    position: absolute; /* Абсолютное позиционирование для поворота */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Размер одной ячейки */
+    grid-template-rows: repeat(5, 1fr); /* Четырёхрядная сетка */
+    border-radius: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2),rgb(39, 26, 88);
+    gap: 7.61px; /* Без зазоров между ячейками */
+    z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+    }
+
+    &__tile-two {
+    background-color:rgb(255, 199, 0);
+    border: 0.5px solid rgba(32, 32, 39, 0.566);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-align: center;
+        border-radius: 30px;
+        box-sizing: border-box;
+        font-weight: 800;
+        line-height: 110%;
+        padding-top: 25px;
+        text-shadow:
+            1px 1px 0 rgba(0, 0, 0, 0.2),
+            -1px -1px 0 rgba(0, 0, 0, 0.2),
+            1px -1px 0 rgba(0, 0, 0, 0.2),
+            -1px 1px 0 rgba(0, 0, 0, 0.2),
+            0px 2px 0 rgba(0, 0, 0, 0.2),
+            2px 0px 0 rgba(0, 0, 0, 0.2),
+            -2px 0px 0 rgba(0, 0, 0, 0.2),
+            0px -2px 0 rgba(0, 0, 0, 0.2);
+        user-select: none;
+    }
+    &__tile-two:nth-child(1) {
+    width: 385px;
+    height: 126px;
+    transform: translateX(55px);
+    
+    }
+    &__tile-two:nth-child(2) {
+    width: 346px;
+    height: 126px;
+    transform: translateX(23px);
+    }
+
+    &__tile-two:nth-child(3) {
+    width: 422px;
+    height: 126px;
+    transform: translateX(51px);
+    
+    
+    }
+    &__tile-two:nth-child(4) {
+    width: 328px;
+    height: 126px;
+    background-color: rgb(255, 236, 143);
+    transform: translateX(55px);
+
+    }
+
+    &__tile-two:nth-child(5) {
+    width: 331px;
+    height: 126px;
+    background-color: rgb(255, 236, 143);
+    transform: translateX(50px);
+
+
+    }
+    &__tile-two:nth-child(6) {
+    width: 340px;
+    height: 126px;
+    transform: translateX(-37px);
+    }
+    &__tile-two:nth-child(7) {
+    width: 385px;
+    height: 126px;
+    transform: translateX(55px);
+    }
+    &__tile-two:nth-child(8) {
+    width: 346px;
+    height: 126px;
+    background-color: rgb(255, 236, 143);
+    transform: translateX(22px);
+    }
+
+    &__tile-two:nth-child(9) {
+    width: 424px;
+    height: 126px;
+    background-color: rgb(255, 236, 143);
+    transform: translateX(50px);
+    
+    }
+    &__tile-two:nth-child(10) {
+    width: 378px;
+    height: 126px;
+    background-color: rgb(255, 236, 143);
+    transform: translateX(55px);
+    }
+ 
+}
+/* Игра 3 */
+
+.minigames-card__container_3{
+  grid-column: span 1;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  transition: transform 0.3s ease;
+  cursor: pointer;  
+
+
+/* &__container_3:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  } */
+}
+.numbers-minigame_3{
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: rgba(86, 94, 239, 1);
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:600px;
+
+&__field_3{
+  position: absolute; /* Абсолютное позиционирование для поворота */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); /*Размер одной ячейки */
+  grid-template-rows: repeat(4, 1fr); /*Четырёхрядная сетка */
+  border-radius: 30px;
+  gap: 10px; /* Без зазоров между ячейками */
+ z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+}
+&__tile-three{
+  box-sizing: border-box;
+  border: 0.5px solid rgba(32, 32, 39, 0.685);
+  border-radius: 30px;
+  background: rgba(176, 174, 255, 1);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 15px;
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.2),
+    -1px -1px 0 rgba(0, 0, 0, 0.2),
+    1px -1px 0 rgba(0, 0, 0, 0.2),
+    -1px 1px 0 rgba(0, 0, 0, 0.2),
+      0px 2px 0 rgba(0, 0, 0, 0.2),
+      2px 0px 0 rgba(0, 0, 0, 0.2),
+    -2px 0px 0 rgba(0, 0, 0, 0.2),
+      0px -2px 0 rgba(0, 0, 0, 0.2);
+  padding: 15.22px 22.83px 20.29px 22.83px;
+  user-select: none;
+}
+
+
+&__tile-three:nth-child(1){
+  width:213px;
+  height: 126px;
+  transform: translateX(80px);
+}
+&__tile-three:nth-child(2){
+  width: 303px;
+  height: 126px;
+  transform: translateX(125px);
+}
+&__tile-three:nth-child(3){
+  width: 314px;
+  height: 126px;
+ transform: translateX(-170px);
+}
+&__tile-three:nth-child(4){
+  width: 213px;
+  height: 126px;
+  transform: translateX(-120px);
+}
+&__tile-three:nth-child(5){
+  width: 197px;
+  height: 126px;
+  transform: translateX(85px);
+}
+
+&__tile-three:nth-child(6){
+  width: 390px;
+  height: 126px;
+  transform: translateX(135px);
+}
+&__tile-three:nth-child(7){
+  width: 213px;
+  height: 126px;
+  transform: translateX(-73px);
+}
+&__tile-three:nth-child(8){
+  width: 197px;
+  height: 126px;
+  transform: translateX(-110px);
+  
+}
+&__tile-three:nth-child(9){
+  width: 193px;
+  height: 80.51px;
+ transform: translateX(113px);
+}
+&__tile-three:nth-child(10){
+  width: 602px;
+  height: 126px;
+  transform: translateX(150px);
+  }
+
+&__tile-three:nth-child(11){
+  width: 193px;
+  height: 126px;
+  transform: translateX(153px);
+}
+
+&__tile-three:nth-child(12){
+  width: 130.66px;
+  height: 126px;
+  transform: translateX(-96px);
+}
+&__tile-three:nth-child(13){
+  width: 205px;
+  height: 126px;
+  transform: translateX(253px);
+}
+&__tile-three:nth-child(14){
+  width: 336px;
+  height: 126px;
+  transform: translateX(250px);
+
+}
+&__tile-three:nth-child(15){
+  width: 205px;
+  height: 126px;
+  transform: translateX(-13px);
+}
+
+}
+
+
+/* игра 4 */
+.minigames-card__container_4{
+  grid-column: span 1;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  /* transform: translateY(-39px); */
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+ 
+
+/* &__container_4:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  } */
+}
+.minigames-card__info-four{
+  width: 600px;
+  height: 100%;
+  padding: 48px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  left: 600px;
+}
+
+
+.numbers-minigame_4{
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: #000000;
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:0;
+
+
+&__field_4{
+  position: absolute; /* Абсолютное позиционирование для поворота */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+  display: grid;
+  grid-template-columns: repeat(5, 167.88px); /* Размер одной ячейки */
+  grid-template-rows: repeat(3, 223.83px); /* Четырёхрядная сетка */
+  border-radius: 30px;
+  gap: 12px; /* Без зазоров между ячейками */
+ z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+}
+&__tile-four{
+  width: 167.88px;
+  height: 223.83px;
+  background-color: var(--color); /* Различные цвета ячеек */
+  color: white;
+  font-family: Montserrat;
+  font-weight: 800;
+  line-height: 110%;
+  font-size: 96px;
+  text-align: center;
+  text-shadow:
+      1px 1px 0 rgba(0, 0, 0, 0.2),
+     -1px -1px 0 rgba(0, 0, 0, 0.2),
+      1px -1px 0 rgba(0, 0, 0, 0.2),
+     -1px 1px 0 rgba(0, 0, 0, 0.2),
+       0px 2px 0 rgba(0, 0, 0, 0.2),
+       2px 0px 0 rgba(0, 0, 0, 0.2),
+      -2px 0px 0 rgba(0, 0, 0, 0.2),
+       0px -2px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 101px;
+  user-select: none;
+  border-radius: 19px;
+  grid-gap: 20px;
+  box-sizing: border-box;
+  padding-top: 55px;
+  
+}
+&__tile--highlighted-4{
+position: absolute;
+width: 217.82px;
+height: 290.42px;
+background-color:rgb(255, 199, 0);
+border: 0.5px solid rgba(39, 26, 88, 0.525);
+border-radius: 19.02px;
+box-shadow: 0px 15.27px 51.14px -9.16px rgba(0, 0, 0, 0.3);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(10deg);
+z-index: 3;
+}
+
+
+
+}
+&__tile-four:nth-child(1) { --color: rgb(86, 94, 239); }
+&__tile-four:nth-child(2) { --color:rgb(0, 158, 228); }
+&__tile-four:nth-child(3) { --color: rgb(173, 97, 255); }
+&__tile-four:nth-child(4) { --color: rgb(242, 80, 80); }
+&__tile-four:nth-child(5) { --color:rgb(0, 158, 228);}
+&__tile-four:nth-child(6) { --color:rgb(31, 164, 108);}
+&__tile-four:nth-child(7) { --color: rgb(242, 80, 80);}
+&__tile-four:nth-child(8) { --color: rgb(255, 199, 0); }
+&__tile-four:nth-child(9) { --color: rgb(153, 209, 0); }
+&__tile-four:nth-child(10) { --color: rgb(255, 199, 0); }
+&__tile-four:nth-child(11) { --color:rgb(0, 158, 228); }
+&__tile-four:nth-child(12) { --color: rgb(153, 209, 0); }
+&__tile-four:nth-child(13) { --color:  rgb(0, 158, 228);}
+&__tile-four:nth-child(14) { --color: rgb(173, 97, 255);}
+&__tile-four:nth-child(15) { --color: rgb(86, 94, 239); }
+
+}
+.minigame_num-four__img{
+position: absolute;
+width: 128px;
+height: 141px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(10deg);
+z-index: 10;
+
+/* Игра 5 */
+
+.minigames-card__container_5{
+  grid-column: span 1;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1; 
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+
+/* &__container_5:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);} */
+ } 
+.numbers-minigame_5{
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Скрываем содержимое вне границ */
+    background-color: rgba(153,209,0,1);
+    position: relative; /*Позиционирование абсолютного потомка  */
+    border-radius: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    top:0;
+    left:600px;
+
+
+    &__field_5{
+    position: absolute; /* Абсолютное позиционирование для поворота */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+    display: grid;
+    grid-template-columns: repeat(5, 167.88px); /* Размер одной ячейки */
+    grid-template-rows: repeat(3, 223.83px); /* Четырёхрядная сетка */
+    border-radius: 30px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2),rgb(39, 26, 88);
+    gap: 12px; /* Без зазоров между ячейками */
+    z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+    }
+
+    &__tile-five{
+    width: 167.88px;
+    height: 223.83px;
+    background-color: var(--color); /* Различные цвета ячеек */
+    border: 0.5px solid rgba(39, 26, 88, 0.466);
+    line-height: 101px;
+    border-radius: 19px;
+    grid-gap: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 110%;
+    text-align: center;
+    text-shadow:
+        1px 1px 0 rgba(0, 0, 0, 0.2),
+        -1px -1px 0 rgba(0, 0, 0, 0.2),
+        1px -1px 0 rgba(0, 0, 0, 0.2),
+        -1px 1px 0 rgba(0, 0, 0, 0.2),
+        0px 2px 0 rgba(0, 0, 0, 0.2),
+        2px 0px 0 rgba(0, 0, 0, 0.2),
+        -2px 0px 0 rgba(0, 0, 0, 0.2),
+        0px -2px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    user-select: none;
+    padding-top: 55px;
+
+
+
+    }
+    &__tile--highlighted-five{
+    position: absolute;
+    width: 217.82px;
+    height: 290.42px;
+    background-color: rgb(225, 255, 143);
+    border: 0.5px solid rgba(39, 26, 88, 0.525);
+    border-radius: 19.02px;
+    box-shadow: 0px 24.07px 80.64px -14.44px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 128px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-shadow:
+            1px 1px 0 rgba(0, 0, 0, 0.2),
+            -1px -1px 0 rgba(0, 0, 0, 0.2),
+            1px -1px 0 rgba(0, 0, 0, 0.2),
+            -1px 1px 0 rgba(0, 0, 0, 0.2),
+            0px 2px 0 rgba(0, 0, 0, 0.2),
+            2px 0px 0 rgba(0, 0, 0, 0.2),
+            -2px 0px 0 rgba(0, 0, 0, 0.2),
+            0px -2px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        user-select: none;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%) rotate(10deg);
+        z-index: 6;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+
+
+    &__tile-five:nth-child(1) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(2) { --color:rgb(188, 236, 48); }
+    &__tile-five:nth-child(3) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(4) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(5) { --color:rgb(188, 236, 48);}
+    &__tile-five:nth-child(6) { --color:rgb(188, 236, 48);}
+    &__tile-five:nth-child(7) { --color: rgb(188, 236, 48);}
+    &__tile-five:nth-child(8) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(9) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(10) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(11) { --color:rgb(188, 236, 48); }
+    &__tile-five:nth-child(12) { --color: rgb(188, 236, 48); }
+    &__tile-five:nth-child(13) { --color:  rgb(188, 236, 48);}
+    &__tile-five:nth-child(14) { --color: rgb(188, 236, 48);}
+    &__tile-five:nth-child(15) { --color: rgb(188, 236, 48); }
+}
+.minigame_num-five__img{
+  width: 37px;
+  height: 67px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  z-index: 3;
+}
+
+/* Игра 6 */
+.minigames-card__container_6{
+ grid-column: span 1;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+  z-index: 1;
+  /* transform: translateY(-39px); */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+/* &__container_6:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+  } */
+  
+ &__info-six{
+  width: 600px;
+  height: 100%;
+  padding: 48px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  left: 600px;
+}
+}
+
+.numbers-minigame_6{
+  width: 600px;
+  height: 100%;
+  overflow: hidden; /* Скрываем содержимое вне границ */
+  background-color: black;
+ position: absolute; /*Позиционирование абсолютного потомка  */
+  border-radius: 30px;
+  row-gap: 12px;
+  column-gap: 12px;
+
+
+&__field_6{
+  position: absolute; /* Абсолютное позиционирование для поворота */
+  top: 50%;
+  left: 50%;
+  display: grid;
+  transform: translate(-50%, -50%) rotate(10deg); /* Поворот на 10° вокруг центра */
+  display: grid;
+  grid-template-columns: repeat(4, 160px); /* Размер одной ячейки */
+  grid-template-rows: repeat(4, 160px); /* Четырёхрядная сетка */
+  gap: 10px; /* Без зазоров между ячейками */
+ z-index: 2; /* Сетка квадратов находится поверх блока с информацией */
+}
+
+&__tile-six{
+  width: 160px;
+  height: 160px;
+  background-color: var(--color); /* Различные цвета ячеек */
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  line-height: 101px;
+  user-select: none;
+  border-radius: 30px;
+  grid-gap: 20px;
+
+}
+
+/* Уникальные цвета для ячеек */
+&__tile-six:nth-child(1) { --color: rgb(217, 182, 255); }
+&__tile-six:nth-child(2) { --color:rgb(31, 164, 108); }
+&__tile-six:nth-child(3) { --color: rgb(86, 94, 239); }
+&__tile-six:nth-child(4) { --color: rgb(0, 193, 255); }
+&__tile-six:nth-child(5) { --color:rgb(242, 80, 80);}
+&__tile-six:nth-child(6) { --color:rgb(255, 199, 0);}
+&__tile-six:nth-child(7) { --color: rgb(153, 209, 0);}
+&__tile-six:nth-child(8) { --color: rgb(173, 97, 255); }
+&__tile-six:nth-child(9) { --color: rgb(86, 94, 239); }
+&__tile-six:nth-child(10) { --color: rgb(0, 193, 255); }
+&__tile-six:nth-child(11) { --color:rgb(255, 109, 0); }
+&__tile-six:nth-child(12) { --color: rgb(31, 164, 108); }
+&__tile-six:nth-child(13) { --color:  rgb(173, 97, 255);}
+&__tile-six:nth-child(14) { --color: rgb(153, 209, 0);}
+&__tile-six:nth-child(15) { --color: rgb(255, 199, 0); }
+&__tile-six:nth-child(16) { --color: rgb(217, 182, 255);}
+
+}
+.main__decoration{
+    &_star_small-1{
+    position: absolute;
+        width: 584px;
+        height: 584px;
+        box-sizing: border-box;
+        left: 996px;
+        top: -4885px;
+        transform: rotate(153.77deg);
+        z-index: 1;
+        overflow-x: hidden;
+    }
+    &__star_large-1{
+    position: absolute;
+        width: 31.34px;
+        height: 31.34px;
+        left: 27.97px;
+        top: -4200px;
+        transform: rotate(5.45deg);
+    }
+    &__star_large-2{
+    position: absolute;
+        width: 54.6px;
+        height: 54.6px;
+        left: 45.18px;
+        top: -4150px;
+        transform: rotate(5.45deg);
+        z-index: 3;
+    }
+
+    &__star_medium-1{
+        position: absolute;
+        width: 35.15px;
+        height: 35.15px;
+        left: 1281.33px;
+        top: -3420px;
+        transform: rotate(7.08deg);
+        z-index: 4;
+    }
+    &__star_medium-2{
+    position: absolute;
+        width: 68.86px;
+        height: 68.86px;
+        left: 1326.54px;
+        top: -3385px;
+        transform: rotate(5.45deg);
+        z-index: 4;
+    }
+    &__star_large-3{
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 1249px;
+        top: -75px;
+        z-index: 4;
+
+    }
+    &__star_small-2{
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    left: 1322px;
+    top: -130px;
+    z-index: 4;
+    }
+ }

@@ -1,20 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашнее задание</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aut!</h1>
-    <button onclick = "startGame();">Удалить сообщение</button>
-    <script src="hw-1.js"></script>
-    <script src="hw-2.js"></script>
-    <script src="hw-3.js"></script>
-    <script src="hw-4.js"></script>
-    <script src="hw-5.js"></script>
-    <script src="hw-6.js"></script>
-     <script src="hw-7.js"></script>
-     <script src="hw-8.js"></script>
+    <section class="top center">
+        <header class="header">
+            <img class="header__star header__star_large" src="images/Star 2.png" alt="Decorative star">
+            <img class="header__star header__star_small" src="images/Star 3.png" alt="Decorative star">
+            <div class="header__decoration"></div>
+            <div class="header__vectors">
+                <div class="header__vectors_star">
+                    <img class="header__vector header__vector_dot" src="images/Huge_star.png" alt="Decorative dot">
+                </div>
+                <div class="header__stars">
+                    <img class="header__vector header__vector_line" src="images/Vector 4780.svg" alt="Decorative line">
+
+                    <img class="header__vector header__vector_curve-1" src="images/Vector 4781.png"
+                        alt="Decorative curve">
+                    <img class="header__vector header__vector_curve-2" src="images/Vector 4782.png"
+                        alt="Decorative curve">
+                    <img class="header__vector header__vector_curve-3" src="images/Vector 4788.png"
+                        alt="Decorative curve">
+                    <img class="header__vector header__vector_curve-4" src="images/Vector 4791.png"
+                        alt="Decorative curve">
+                    <img class="header__star header__star_medium-1" src="images/Star 5.png" alt="Decorative star">
+                    <img class="header__star header__star_medium-2" src="images/Star 4.png" alt="Decorative star">
+                </div>
+            </div>
+            <div class="header__content">
+                <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
+                <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
+                    <a href="#game-about" class="header__link"><strong>«Поехали!»</strong></a> и <a class="header__link"
+                        href="#game-about"><strong>приступай</strong></a>.
+                </p>
+                <button href="#game-about" class="header__btn">Поехали!</button>
+            </div>
+        </header>
+    </section>
+    <section class="menu center">
+        <div class="menu__nav-box">
+            <ul class="menu__nav scroll-text">
+                <li class="menu__item menu__text">Викторина</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">угадай число</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Переверни текст</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Простая арифметика</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Камень, ножницы, бумага</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Генератор случайных цветов</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+
+                <li class="menu__item menu__text">Викторина</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">угадай число</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Переверни текст</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Простая арифметика</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Камень, ножницы, бумага</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Генератор случайных цветов</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+
+                <li class="menu__item menu__text">Викторина</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">угадай число</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Переверни текст</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Простая арифметика</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Камень, ножницы, бумага</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+                <li class="menu__item menu__text">Генератор случайных цветов</li>
+                <li class="menu__item menu__img"><img src="images/Star.png" alt="star" class="menu__img"></li>
+            </ul>
+        </div>
+
+    </section>
+    <main class="games center">
+        <section class="games__container center">
+            <div class="games__content">
+                <div class="games__description">
+                    <h3 class="games__title" id="game-about">Об играх</h3>
+                    <p class="games__text">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них
+                        может
+                        поиграть каждый.
+                        Все игры доступны для пользования.</p>
+                </div>
+                <div class="games-list center">
+                    <div class="games-card center">
+                        <div class="games-card__container_1">
+                            <a href="#game_1">
+                                <div class="games-card__info">
+                                    <div class="games-card__title">Игра №1</div>
+                                    <div class="games-card__text">Угадай число</div>
+                                </div>
+                                <div class="numbers-game_1">
+                                    <div class="numbers-game__field_1">
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one">44</div>
+                                        <div class="numbers-game__tile-one">6</div>
+                                        <div class="numbers-game__tile-one">11</div>
+                                        <div class="numbers-game__tile-one">48</div>
+                                        <div class="numbers-game__tile-one">48</div>
+                                        <div class="numbers-game__tile-one">66</div>
+                                        <div class="numbers-game__tile-one">2</div>
+                                        <div class="numbers-game__tile-one game_num-center ">11</div>
+                                        <div class="numbers-game__tile-one">8</div>
+                                        <div class="numbers-game__tile-one">36</div>
+                                        <div class="numbers-game__tile-one">9</div>
+                                        <div class="numbers-game__tile-one">4</div>
+                                        <div class="numbers-game__tile-one">92</div>
+                                        <div class="numbers-game__tile-one">10</div>
+                                        <div class="numbers-game__tile-one">7</div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+                                        <div class="numbers-game__tile-one"></div>
+
+                                    </div>
+                                    <div class="numbers-game__tile--highlighted_1  game_num-big">?</div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="games-card__container_2">
+                            <a href="#game_2">
+                                <div class="games-card__info">
+                                    <div class="games-card__title">Игра №2</div>
+                                    <div class="games-card__text">Простая арифметика</div>
+                                </div>
+                                <div class="numbers-game_2">
+                                    <div class="numbers-game__field_2">
+                                        <div class="numbers-game__tile-two">36 − 6 = ?</div>
+                                        <div class="numbers-game__tile-two">4 ÷ 2 = ?</div>
+                                        <div class="numbers-game__tile-two">100 ÷ 4 = ? </div>
+                                        <div class="numbers-game__tile-two">1 + 3 = ?</div>
+                                        <div class="numbers-game__tile-two">9 + 1 = ?</div>
+                                        <div class="numbers-game__tile-two">3 × 2 = ?</div>
+                                        <div class="numbers-game__tile-two">36 − 6 = ?</div>
+                                        <div class="numbers-game__tile-two">4 ÷ 2 = ?</div>
+                                        <div class="numbers-game__tile-two">78 + 57 = ?</div>
+                                        <div class="numbers-game__tile-two">10 − 4 = ?</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="games-card__container_3">
+                            <a href="#game_3">
+                                <div class="games-card__info">
+                                    <div class="games-card__title">Игра №3</div>
+                                    <div class="games-card__text">Переверни текст</div>
+                                </div>
+                                <div class="numbers-game_3">
+                                    <div class="numbers-game__field_3">
+
+                                        <div class="numbers-game__tile-three">рыс</div>
+                                        <div class="numbers-game__tile-three">акшок</div>
+                                        <div class="numbers-game__tile-three">агудар</div>
+                                        <div class="numbers-game__tile-three">рыс</div>
+                                        <div class="numbers-game__tile-three">тик</div>
+                                        <div class="numbers-game__tile-three">родимоп</div>
+                                        <div class="numbers-game__tile-three">рыс</div>
+                                        <div class="numbers-game__tile-three">тик</div>
+                                        <div class="numbers-game__tile-three">топ</div>
+                                        <div class="numbers-game__tile-three">ытсиммаргорп</div>
+                                        <div class="numbers-game__tile-three">топ</div>
+                                        <div class="numbers-game__tile-three">гим</div>
+                                        <div class="numbers-game__tile-three">гим</div>
+                                        <div class="numbers-game__tile-three">анидор</div>
+                                        <div class="numbers-game__tile-three">гим</div>
+
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class="games-card__container_4">
+                            <a href="#game_4">
+                                <div class="games-card__info">
+                                    <div class="games-card__title">Игра №4</div>
+                                    <div class="games-card__text">Камень, ножницы, бумага</div>
+                                </div>
+                                <div class="numbers-game_4">
+                                    <div class="numbers-game__field_4">
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                        <div class="numbers-game__tile-four">?</div>
+                                    </div>
+                                    <div class="numbers-game__tile--highlighted-4  num-big-four"><img
+                                            class="game_num-four__img" src="images/✊.png" alt="fist"></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="games-card__container_5">
+                            <a href="#game_5">
+                                <div class="games-card__info">
+                                    <div class="games-card__title">Игра №5</div>
+                                    <div class="games-card__text">Простая викторина</div>
+                                </div>
+                                <div class="numbers-game_5">
+                                    <div class="numbers-game__field_5">
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                        <div class="numbers-game__tile-five">?</div>
+                                    </div>
+
+                                </div>
+                                <div class="numbers-game__tile--highlighted-five">?</div>
+                            </a>
+                        </div>
+
+
+
+
+
+                        <div class="games-card__container_6">
+                            <a href="#game_6">
+                                <div class="games-card__info">
+                                    <div class="games-card__title">Игра №6</div>
+                                    <div class="games-card__text">Генератор случайных цветов</div>
+                                </div>
+                                <div class="numbers-game_6">
+                                    <div class="numbers-game__field_6">
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                        <div class="numbers-game__tile-six"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mini_game-container center">
+            <div class="mini_game-box">
+                <div class="mini_game_desc">
+                    <h3 class="mini_game__title" id="game-about">Мини-игры</h3>
+                </div>
+
+
+                <div id="game_1" class="minigames-list center">
+                    <div class="minigames-card center">
+                        <div class="minigames-card__container_1">
+
+                            <div class="minigames-card__info game-item__wrapper">
+                                <div class="minigames-card__title game-item__name">Угадай число</div>
+                                <div class="minigames-card__text  game-item__type">Попробуй угадать случайное число
+                                    от 1 до 100.</div>
+                                <button type="number" onclick="guessNumber()" class="minigames__btn">Играть!</button>
+                                <div id="result"></div>
+                            </div>
+                            <div class="numbers-minigame_1 puzzle">
+                                <div class="numbers-minigame__field_1 puzzle__board">
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">44</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">6</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">11</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">48</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">48</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">66</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">2</div>
+                                    <div class="numbers-minigame__tile-one game_num-center  puzzle__square">11</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">8</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">36</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">9</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">4</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">92</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">10</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square">7</div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+                                    <div class="numbers-minigame__tile-one puzzle__square"></div>
+
+                                </div>
+                                <div
+                                    class="numbers-minigame__tile--highlighted_1  game_num-big    puzzle_squarre--active">
+                                    ?</div>
+                            </div>
+
+                        </div>
+
+
+                        <div id="game_2" class="minigames-card__container_2">
+
+                            <div class="minigames-card__info-tw0">
+                                <div class="minigames-card__title minigames-card__title-two">Простая арифметика</div>
+                                <div class="minigames-card__text minigames-card__text-two">Попробуй решить простые
+                                    арифметические задачи.
+                                </div>
+                                <button class="minigames__btn" onclick="startGame()">Играть!</button>
+                            </div>
+                            <div class="numbers-minigame_2">
+                                <div class="numbers-game__field_2">
+                                    <div class="numbers-minigame__tile-two">36 − 6 = ?</div>
+                                    <div class="numbers-minigame__tile-two">4 ÷ 2 = ?</div>
+                                    <div class="numbers-minigame__tile-two">100 ÷ 4 = ? </div>
+                                    <div class="numbers-minigame__tile-two">1 + 3 = ?</div>
+                                    <div class="numbers-minigame__tile-two">9 + 1 = ?</div>
+                                    <div class="numbers-minigame__tile-two">3 × 2 = ?</div>
+                                    <div class="numbers-minigame__tile-two">36 − 6 = ?</div>
+                                    <div class="numbers-minigame__tile-two">4 ÷ 2 = ?</div>
+                                    <div class="numbers-minigame__tile-two">78 + 57 = ?</div>
+                                    <div class="numbers-minigame__tile-two">10 − 4 = ?</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div id="game_3" class="minigames-card__container_3">
+
+                            <div class="minigames-card__info minigames-card__info-three">
+                                <div class="minigames-card__title minigames-card__title-three">Переверни текст</div>
+                                <div class="minigames-card__text minigames-card__text-three">Попробуй ввести текст,
+                                    который будет перевернут.</div>
+                                <button class="minigames__btn" onclick="startReverseGame()">Играть!</button>
+                                
+                            </div>
+                            <div class="numbers-minigame_3">
+                                <div class="numbers-minigame__field_3">
+
+                                    <div class="numbers-minigame__tile-three">рыс</div>
+                                    <div class="numbers-minigame__tile-three">акшок</div>
+                                    <div class="numbers-minigame__tile-three">агудар</div>
+                                    <div class="numbers-minigame__tile-three">рыс</div>
+                                    <div class="numbers-minigame__tile-three">тик</div>
+                                    <div class="numbers-minigame__tile-three">родимоп</div>
+                                    <div class="numbers-minigame__tile-three">рыс</div>
+                                    <div class="numbers-minigame__tile-three">тик</div>
+                                    <div class="numbers-minigame__tile-three">топ</div>
+                                    <div class="numbers-minigame__tile-three">ытсиммаргорп</div>
+                                    <div class="numbers-minigame__tile-three">топ</div>
+                                    <div class="numbers-minigame__tile-three">гим</div>
+                                    <div class="numbers-minigame__tile-three">гим</div>
+                                    <div class="numbers-minigame__tile-three">анидор</div>
+                                    <div class="numbers-minigame__tile-three">гим</div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="game_4" class="minigames-card__container_4">
+
+                            <div class="minigames-card__info-four">
+                                <div class="minigames-card__title minigames-card__title-four">Камень, ножницы, бумага
+                                </div>
+                                <div class="minigames-card__text minigames-card__text-four">Сыграй в популярную игру
+                                    против компьютера.</div>
+                                <button class="minigames__btn" onclick="playRockPaperScissors()">Играть!</button>
+                                <div id="result"></div>
+                            </div>
+                            <div class="numbers-minigame_4">
+                                <div class="numbers-minigame__field_4">
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                    <div class="numbers-minigame__tile-four">?</div>
+                                </div>
+                                <div class="numbers-minigame__tile--highlighted-4  num-big-four"><img
+                                        class="minigame_num-four__img" src="images/✊.png" alt="fist"></div>
+                            </div>
+
+                        </div>
+
+                        <div id="game_5" class="minigames-card__container_5">
+                            
+                                <div class="minigames-card__info minigames-card__info-five">
+                                    <div class="minigames-card__title minigames-card__title-five">Простая викторина
+                                    </div>
+                                    <div class="minigames-card__text minigames-card__text-five">Отвечай на вопросы
+                                        викториныс вариантами ответов.
+                                    </div>
+                                    <button class="minigames__btn" onclick="startQuiz()">Играть!</button>
+                                    <div id="quiz-result"></div>
+                                </div>
+                                <div class="numbers-minigame_5">
+                                    <div class="numbers-minigame__field_5">
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                        <div class="numbers-minigame__tile-five">?</div>
+                                    </div>
+
+                                </div>
+                                <div class="numbers-minigame__tile--highlighted-five">?</div>
+                            
+                        </div>
+
+
+
+
+
+                        <div id="game_6" class="minigames-card__container_6">
+                            
+                                <div class="minigames-card__info-six">
+                                    <div class="minigames-card__title">Генератор случайных цветов</div>
+                                    <div class="minigames-card__text">Игра, в которой при клике на кнопку фон страницы
+                                        меняется на случайный.</div>
+                                    <button class="minigames__btn" onclick="changeBackgroundColor()">Играть!</button>
+                                </div>
+                                <div class="numbers-minigame_6">
+                                    <div class="numbers-minigame__field_6">
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                        <div class="numbers-minigame__tile-six"></div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <div class="main__decoration">
+            <img class="main__star main__star_large-1" src="images/Star 11.png" alt="Decorative star">
+            <img class="main__star main__star_large-2" src="images/Star 12.png" alt="Decorative star">
+            <img class="main__star main__star_small-1" src="images/Star 1.png" alt="Decorative star">
+            <img class="main__star main__star_medium-1" src="images/Star 7.png" alt="Decorative star">
+            <img class="main__star main__star_medium-2" src="images/Star 6.png" alt="Decorative star">
+            <img class="main__star main__star_small-2" src="images/Star 8.png" alt="Decorative star">
+            <img class="main__star main__star_large-3" src="images/Star 10.png" alt="Decorative star">
+        </div>
+
+
+
+    </main>
+
+    <footer class="footer center">
+        <h3 class="footer__text">Все права защищены.</h3>
+    </footer>
+
+
+
+    <script src="game-1.js"></script>
+    <script src="game-2.js"></script>
+    <script src="game-3.js"></script>
+    <script src="game-4.js"></script>
+    <script src="game-5.js"></script>
+    <script src="game-6.js"></script>
 </body>
+
 </html>
